@@ -102,3 +102,26 @@ div.binglie {
 1. 英文式，如red，green
 2. 16进制颜色代码 #ff4400（RGB）
 3. 颜色函数 rgb(255, 68, 0) <--> #ff4400 */
+
+
+
+
+span.spanTest1{
+    color:rgb(0,0,238);
+    text-decoration: underline;
+}
+span.spanTest2{
+    color:rgb(0,0,238);
+    text-decoration: overline;
+}
+
+span.spanTest3{
+    color:rgb(0,0,238);
+    text-decoration:line-through;
+}
+
+span.spanTest1,
+span.spanTest2,
+span.spanTest3{
+    font-size: 25px;    
+}
