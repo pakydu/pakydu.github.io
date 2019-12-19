@@ -1,7 +1,7 @@
 
 html {
     font-size: 20px;
-    font-family: 'Long Cang','Noto Serif SC', serif, Arial, Helvetica, sans-serif;;
+    font-family: 'Arial','Long Cang','Noto Serif SC', serif, Arial, Helvetica, sans-serif;;
 }
 
 body {
@@ -10,6 +10,10 @@ body {
     background-color: #91c2f2;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
+}
+
+div{
+    width: 800px;
 }
 
 nav ul {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Paky's social</title>
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-ico">
+        <!-- 3.外部css文件 -->
+        <link href="css/test.css" rel="stylesheet" type="text/css">
+        <!-- 2.页面级样式 -->
+        <!-- <style type="text/css">
+            div{
+                width:100px;
+                height: 100px;
+                background-color: green;
+            }
+        </style> -->
+    </head>
+    <body>
+        <ul style="list-style: none;">
+            <li style="float: left; margin: 0 10px;padding: 0 5px;"><a rel="Home" href="index.html" title="home page">Home</a></listyle="float: left;">
+            <li style="float: left;margin: 0 10px; padding: 0 5px;"><a rel="Projects" href="projects/projects.html" title="projects page">Projects</a></li>
+            <li style="float: left;margin: 0 10px; padding: 0 5px;"><a rel="Picture" href="pictures/pictures.html" title="pictures page">Pictures</a></li>
+            <li style="float: left;margin: 0 10px; padding: 0 5px;"><a rel="Social" href="social/social.html" title="social pageeeeeeeeeeeee">Social</a></li>
+            <li style="float: left;margin: 0 10px; padding: 0 5px;"><a rel="Test" href="test.html" title="Paky test">test</a></li>
+        </ul>
+        <br>
+        <p><hr></p>
+        <!-- 引入css -->
+        <!-- 1.行间样式
+        <div style="
+        width:100px;
+        height: 100px;
+        background-color: red;
+        margin: 0;
+        "></div> -->
+
+        <!-- 2.页面级样式 -->
+        <!-- 3.外部css文件 -->
+        <div>
+
+        </div>
+
+        <!-- 选择器，样式如何选中元素 -->
+        <!-- 1. Id 选择器 (一个元素智能有一个ID号，一个ID号对应一个元素)-->
+        <div id="only1">123</div>
+        <div id="only2">456</div>
+        <!-- 2. class 选择器：
+                         多个元素可以用一个相同的class名字；
+                         一个元素可以有多个class名字)-->
+        <div class="demo demo2">789</div>
+        <div class="demo">abc</div>
+
+        <!-- 3. 标签选择器,选中所有的标签。 -->
+        <div>efg</div>
+        <!-- 4. 通配符选择器 -->
+
+        <!-- 5. 属性选择器 -->
+        <div name='test'>xyz</div>
+        <div name='test2'>xyz</div>
+
+        <!-- 父子选择器 -->
+        <div class="fater">
+            <em>paky0</em>
+            <span class="son">
+                <em>paky</em></span>
+        </div>
+        <span>Jenniffer</span>
+    
+
+        <!-- 并列选择器 -->
+        <div>1</div>
+        <div class="binglie">2</div>
+        <p class="binglie">3</p>
+
+        <div class="x"></div>
+        <div class="y"></div>
+    </body>
+</html>

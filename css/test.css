@@ -1,0 +1,104 @@
+
+/* 圆型
+div{
+    width:100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+} */
+/* css权重：
+!important                 Infinity (正无穷)
+行间样式                    1000
+id                          100
+class|属性|伪类              10
+标签|伪元素                   1
+通配符                        0
+
+Note: 同级的权重，后面的会覆盖前面的。
+
+选择器优先级-->主要依赖css的权重值。
+  !--important > 行间样式   > id > class|属性 > 标签 > 通配符 */
+
+/* 1. Id 选择器 */
+#only1 {
+    background-color: red;
+}
+
+#only2 {
+    background-color: green;
+}
+
+/* 2. class 选择器 */
+.demo {
+    background-color: yellow;
+}
+
+.demo2 {
+    background-color:#f40;
+}
+
+/* <!-- 3. 标签选择器,选中所有的标签。 --> */
+div {
+    background-color: black;
+}
+
+/* <!-- 4. 通配符选择器 --> */
+*{
+    background-color: pink;
+}
+
+/* 5.属性选择器 */
+[name] {
+    background-color: aqua;
+}
+
+[name='test'] {
+    background-color:orange;
+}
+
+
+/* 父子选择器 */
+[class='fater'] [class]{
+    background-color:red;
+}
+
+.fater .son em{
+    background-color: yellow;
+}
+
+
+span{
+    background-color: blueviolet;
+}
+
+/* 直接父子选择器 */
+div > em {
+    background-color: cornflowerblue;
+}
+
+/* <!-- 并列选择器 --> */
+div.binglie {
+    background-color: aqua;
+}
+
+/* 分组选择器,用逗号分隔 */
+.x{
+    background-color: red;
+    border: 100px solid black;
+    border-left-color: #f40;
+    border-right-color: #f40;
+}
+.y{
+    background-color: green;
+}
+
+.x,
+.y{
+    width: 0px;
+    height: 0px;
+}
+
+/* 颜色的表示：
+1. 英文式，如red，green
+2. 16进制颜色代码 #ff4400（RGB）
+3. 颜色函数 rgb(255, 68, 0) <--> #ff4400 */

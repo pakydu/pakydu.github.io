@@ -13,10 +13,30 @@
             <li><a rel="Projects" href="../projects/projects.html" title="projects page">Projects</a></li>
             <li><a rel="Picture" href="../pictures/pictures.html" title="pictures page">Pictures</a></li>
             <li><a rel="Social" href="../social/social.html" title="social pageeeeeeeeeeeee">Social</a></li>
+            <li><a rel="Test" href="../test.html" title="Paky test">test</a></li>
         </ul>
         <hr>
     </nav>
         <h1>Social page</h1>
+        <form method="get" action="">
+            <p>名字:<input type="text" name="username" style="color: #999;" value="请输入你的名字" 
+            onfocus="if(this.value=='请输入你的名字'){this.value=''; this.style.color='#f20';}" 
+            onblur="if(this.value==''){this.value='请输入你的名字'; this.style.color='#999';}"></p>
+            <p>密码:<input type="password" name="userpass"></p>
+            <p><input type="submit" ></p>
+            <ul style="list-style:none">
+                <li><input type="radio" name="who" value="a" checked='checked'>a</li>
+                <li><input type="radio" name="who" value="b">b</li>
+                <li><input type="radio" name="who" value="c">c</li>
+                <li><input type="submit" name="submit"></li>
+            </ul>
+
+            <select name="province" value="B">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </form>
         <h3>you can touch me via mail: <a href="mailto:paky.pc.du@gmail.com?cc=paky.pc.du@qq.com?bcc=175237553@qq.com&subject=this is title&body=this is body" title="send mail dialog"> send mail </a></h3>
         <pre>
             <code>var para = document.querySelector('p');
