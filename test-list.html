@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>paky test list</title>
+</head>
+<body>
+    <h1>Scrambled Eggs</h1>
+    <p>Eggs are one of my favourite foods.
+       Here is a recipe for deliciously rich scrambled eggs.
+    </p>
+    <h2>Ingredinents</h2>
+    <ul style=none>
+        <li>2 eggs</li>
+        <li>1tbs butter</li>
+        <li>2tbs cream</li>
+    </ul>
+    <h2>Method</h2>
+    <ol type="A" start=4>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+    <strong><a href="./index.html#homeflag">process home</a></strong>
+    <form method="POST" action="">
+            <p>名字:<input type="text" name="username" style="color: #999;" value="请输入你的名字" 
+            onfocus="if(this.value=='请输入你的名字'){this.value=''; this.style.color='#f20';}" 
+            onblur="if(this.value==''){this.value='请输入你的名字'; this.style.color='#999';}"></p>
+            <p>密码:<input type="password" name="userpass"></p>
+            
+            <ul style="list-style:none">
+                <li><input type="radio" name="who" value="a" checked='checked'>a</li>
+                <li><input type="radio" name="who" value="b">b</li>
+                <li><input type="radio" name="who" value="c">c</li>
+                <p><input type="submit" value="Submit">
+            </ul>
+
+            <ul style="list-style:none">
+                    <li><input id="a" type="checkbox" name="who" value="a" checked='checked'><label for="a">A</label></li>
+                    <li><input id="b" type="checkbox" name="who" value="b"><label for="b">B</label></li>
+                    <li><input id="c" type="checkbox" name="who" value="c"><label for="c">C</label></li>
+                    <p><input type="submit" value="Submit">
+                </ul>
+
+
+
+            <select name="province" value="B">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <br>
+            <select name="province2" value="B" multiple="multiple">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+            </select>
+            <input type="file" name="uploadfile">
+            <p><input type="image" src="image/upload.jpg" width="100" height="100"
+                value="Submit"></p>
+            <button><img src="image/upload.jpg" alt="upload" width="10" height="10"> click Me</button>
+
+            <br>
+
+            <label>Age: <input type="text" name="age"></label>
+            <br>
+            Gender:
+            <input type="radio" id="female" name="gender" value="f">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="m">Male
+            <!-- <label for="female">Male</label> -->
+            
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Email:<input type="email" name="mail"></label>
+                <br>
+                <label>Mobile:<input type="text" name="mobile"></label>
+                <br>
+                <label>Telephone:<input type="text" name="phone"></label>
+            </fieldset>
+
+            <h1>HTML5 form item</h1>
+            <label for="username"> Username:</label>
+            <input type="text" name="username" required="required">
+            <br>
+            <label for="password"> Password:</label>
+            <input type="password" name="password" required="required">
+            <input type="submit" value="Submit">
+
+            <label for="date">Date:</label>
+            <input type="date" name="date">
+            <input type="submit" value="Submit">
+
+        </form>
+</body>
+</html>

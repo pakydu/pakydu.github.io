@@ -90,6 +90,9 @@ div.binglie {
 }
 .y{
     background-color: green;
+    border: 100px solid black;
+    border-left-color: #f40;
+    border-right-color: #f40;
 }
 
 .x,
