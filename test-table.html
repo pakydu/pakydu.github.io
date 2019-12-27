@@ -4,37 +4,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paky test table marked flage.</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90%;
+            color: #666;
+            background-color: #f8f8f8;
+        }
+
+        li {
+            list-style-image: url("image/icon-plus.png");
+            line-height: 1.6em;
+        }
+
+        table {
+            border-spacing: 0px;
+        }
+
+        th, td{
+            padding: 5px 30px 5px 10px;
+            border-spacing: 0px;
+            font-size: 90%;
+            margin: 0px;
+            text-align: center;
+            background-color: #e0e9f0;
+            border-top: 1px solid #cbd2d8;
+            border-bottom: 1px solid  #cbd2d8;
+            border-right: 1px solid  #cbd2d8;
+        }
+        tr.head th{
+            color: #fff;
+            background-color: #90b4d6;
+            border-top: 2px solid #547ca0;
+            border-bottom: 2px solid #547ca0;
+            border-right: 2px solid #547ca0;
+            text-align: center;
+            text-shadow: -1px -1px 1px #666;
+            letter-spacing: 0.15em;
+        }
+        td {
+            text-shadow: 1px 1px 1px #fff;
+        }
+
+        tr.even td, tr.even th {
+            background-color: #e8f5eb;
+        }
+
+        tr.head th:first-child {
+            -webkit-border-top-left-radius: 5px;
+        }
+        tr.head th:last-child {
+            -webkit-border-top-right-radius: 5px;
+        }
+
+        fieldset {
+            width: 450px;
+            margin-top: 20px;
+            border: 1px solid #d6d6d6;
+            background-color: #fff;
+            line-height: 1.6em;
+        }
+        legend {
+            font-style: inherit;
+            color: #666;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 200px;
+            border: 1px solid #d6d6d6;
+            padding: 4px;
+            margin: 2px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="text"]:hover,
+        input[type="email"]:hover {
+            background-color: #d0e2f0;
+            border: 1px solid #999;
+        }
+        input[type="submit"] {
+            border: 1px solid #063;
+            background-color: #096;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top:10px
+        }
+        input[type="submit"]:hover {
+            border: 1px solid #063;
+            background-color: #0c3;
+            color:#fff;
+            cursor: pointer;
+        }
+
+        .title {
+            float: left;
+            width: 160px;
+            clear: left;
+        }
+        .submit {
+            width: 310px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" bgcolor="#f40">
-        <thead>
-            <tr>
-                <th>Date</th>             <th>Incom</th>             <th>Expenditure</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>1st January</th>
-                <td>250</td>
-                <td>36</td>
-                <td>a</td>
-                <td>b</td>
-            </tr>
-            <tr>
-                    <th>2st January</th>
-                    <td>285</td>
-                    <td colspan="2">48</td>
-                    <td>x</td>
-                </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td></td>
-                <td>250</td>
-                <td>36</td>
-            </tr>
-        </tfoot>
+    <h1>Poetry Workshops</h1>
+    <p>We will be conducting a number of Poetry Workshops and symposiums throughout the year.</p>
+    <p>Please note that the following events are free to members:</p>
+    <ul>
+        <li>A Poetic perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr>
+            <th>A Poetic Perspective</th>
+            <td>Sat, 4 Fed 2019 <br /> 11am - 2pm</td>
+            <td>Sat, 3 Mar 2019 <br /> 11am - 2pm</td>
+            <td>Sat, 17 Mar 2019 <br /> 11am - 2pm</td>
+        </tr>
+        <tr class="even">
+            <th>Walt Whitman at War</th>
+            <td>Sat, 1 Fed 2019 <br /> 11am - 2pm</td>
+            <td>Sat, 2 Mar 2019 <br /> 12am - 1pm</td>
+            <td>Sat, 7 Mar 2019 <br /> 11am - 1pm</td>
+        </tr>
+        <tr>
+            <th>A Poetic Perspective</th>
+            <td>Sat, 4 Fed 2019 <br /> 11am - 2pm</td>
+            <td>Sat, 3 Mar 2019 <br /> 11am - 2pm</td>
+            <td>Sat, 17 Mar 2019 <br /> 11am - 2pm</td>
+        </tr>
+        <tr class="even">
+            <th>Walt Whitman at War</th>
+            <td>Sat, 1 Fed 2019 <br /> 11am - 2pm</td>
+            <td>Sat, 2 Mar 2019 <br /> 12am - 1pm</td>
+            <td>Sat, 7 Mar 2019 <br /> 11am - 1pm</td>
+        </tr>
     </table>
-    
+    <form action="http://www.pakytest.com/form.html" method="GET">
+        <fieldset>
+            <legend>Register your interest</legend>
+            <p>
+                <label class="title" for="name">Your name:</label>
+                <input type="text" name="name" id="name"><br>
+                <label class="title" for="email">Your email:</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="loction" class="title">Your closet center</label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="il">Chicago</option>
+                    <option value="ca">San Francisco</option>
+                </select>
+            </p>
+
+            <span class="title">Are you a member?</span>
+            <label><input type="radio" name="member" value="yes">Yes</label>
+            <label><input type="radio" name="member" value="no">No</label>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Register"></div>
+    </form>
 </body>
 </html>

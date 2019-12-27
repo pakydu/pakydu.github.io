@@ -49,3 +49,8 @@ a {
     text-decoration:blink;
     text-transform: capitalize;
 }
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

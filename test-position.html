@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paky testing position</title>
+    <style type="text/css">
+        body {
+            width: 750px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #654;
+        }
+
+        h1 {
+            background-color: #efefef;
+            padding: 10px;
+            /* position:absolute; */
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 450px;
+            margin: 0px;
+            z-index: 15;
+        }
+        blockquote {
+            float: right;
+            width: 270px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 10px;
+            margin: 0px 0px 0px 0px;
+            font-size: 130%;
+            font-style: italic;
+        }
+
+        p {
+            width: 250px;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            background-color: red;
+
+        }
+        p.example1{
+            margin-top: 100px;
+            z-index:50;
+        }
+
+        p.example2{
+            position: relative;
+            top: 10px;
+            left: 100px;
+            /* bottom: 30px; */
+            /* z-index: 10; */
+        }
+        /* p.example3{
+            clear: left;
+        } */
+
+        p.clear{
+            clear: both;
+        }
+
+        div > p {
+            position:absolute;
+            top: 50px;
+            left:20px;
+            padding: 5px;
+            border: 1px solid #000;
+            overflow: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Evolution of the Bicycle</h1>
+    <div>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+    </div>
+    <blockquote>"Life is like riding a bicycle. To keep your balance you must keep moveing." - Albert Einstein</blockquote>
+    <p class="example1">In 1817 Baron von Drain invented a walking machine that would help hime get around the royal gardens faster: two samesize in-line wheels, the front one steerable,
+        mounted in a frame upon which you straddled. The device was propelled by pushing our feet against the ground.
+    </p>
+    <p class="example2">The machine became known as the Draisienne(or "hobby horse"). </p>
+    <p class="clear">The machine became known as the Draisienne(or "hobby horse"). It was made entirely of wood. This enjoyed a short lived popularity as a fad,
+            not being practical for transportation in any other place than a well maintained pathway such as in a park or garden.
+        </p>
+
+    <p class="example3">The next appearance of a two-wheeled riding machine was in 1865, when pedals ware applied directly to the front wheel.This machine was known as the velocipede(meaning "fast foot") as well as the "bone shaker,"since it's wooden structure combined
+         with the cobblestone roads of the day made for an extremely uncomfortable fide.
+    </p>
+    
+</body>
+</html>
