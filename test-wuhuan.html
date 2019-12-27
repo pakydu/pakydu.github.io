@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+        .one,
+        .two,
+        .three,
+        .four,
+        .five{
+            /* position: absolute; */
+            width: 100px;
+            height: 100px;
+            border: 10px solid black;
+            border-radius: 50%;
+        }
+        .one{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-color:red;
+        }
+
+        .two{
+            position: absolute;
+            top: 60px;
+            left: 80px;
+            border-color:  blue;
+        }
+        .three{
+            position: absolute;
+            top: 10px;
+            left: 150px;
+            border: 10px solid green;
+            z-index: 10;
+        }
+        .four{
+            position: absolute;
+            top: 60px;
+            left: 220px;
+            border: 10px solid purple;
+            z-index: 5;
+        }
+        .five{
+            position:absolute;
+            top: 10px;
+            left: 290px;
+            border: 10px solid yellow;
+        }
+
+        .all{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -210px;
+            margin-top: -95px;
+
+            width: 420px;
+            height: 190px;
+            border: 2px solid black;
+            overflow: auto;
+            /* width: 100%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+</body>
+</html>
