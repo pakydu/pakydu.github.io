@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paky testing js.</title>
+    <style type="text/css">
+        body {
+            background-color: #523620;
+            color: #fff;
+            font-family: 'Wellfleet', times, serif;
+            font-size: 150%;
+            margin: 0px 0px 0px 0px;
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -150px;
+
+            background-color: #fecc6f;
+            height: 596px;
+            padding: 10px;
+            min-width: 779px;
+
+            width: auto;
+            height: 300px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            /* margin: 100px auto 100px auto; */
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div id="answer">
+
+    </div>
+
+    <script type="text/javascript">
+        var scores = [24, 32, 17];
+        var arrayLength = scores.length;
+        var roundNumber = 0;
+        var msg = '';
+        var i;
+
+        // for (i = 0; i < arrayLength; i++) {
+        //     roundNumber = i + 1;
+        //     msg += 'Round ' + roundNumber + ': ';
+        //     msg += scores[i] + '<br>';
+        // }
+        i = 1;
+        while(i < 10){
+            for (var j = 1 ; j < i; j++)
+                msg += i + ' x ' + j + ' = ' + (i *j) + '\t\t'; 
+            msg += i + 'x ' + j + ' = ' + (i *j) + '<br>'; 
+            i++;
+        }
+
+        document.getElementById('answer').innerHTML = msg;
+    </script>
+
+</body>
+</html>
