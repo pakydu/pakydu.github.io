@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        .slot > img {
+       margin: 0!important;
+       height: 71px;
+       width: 50px;
+        }
+        .container {
+        background-color: #4a2b0f;
+        height: 400px;
+        width: 260px;
+        margin: 50px auto;
+        border-radius: 4px;
+        }
+        .nav-logo {
+            width: auto;
+            height: 53px;
+            display: inline;
+            /* margin: 1px; */
+        }
+        .header {
+        border: 2px solid #fff;
+        border-radius: 4px;
+        height: 55px;
+        margin: 14px auto;
+        background-color: #457f86
+        }
+        .header h2 {
+        height: 30px;
+        margin: auto;
+        }
+        .header h2 {
+        display: inline;
+        font-size: 20px;
+        text-align:center; 
+        line-height:25px;
+        margin: 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        }
+        .slots{
+        display: flex;
+        background-color: #457f86;
+        border-radius: 6px;
+        border: 2px solid #fff;
+        }
+        .slot{
+        flex: 1 0 auto;
+        background: white;
+        height: 75px;
+        width: 50px;
+        margin: 8px;
+        border: 2px solid #215f1e;
+        border-radius: 4px;
+        text-align: center;
+        }
+        .go {
+        width: 100%;
+        color: #fff;
+        background-color: #457f86;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        box-sizing: none;
+        outline: none!important;
+        }
+        .foot {
+        height: 150px;
+        background-color: 457f86;
+        border: 2px solid #fff;
+        }
+        
+        .logger {
+        color: white;
+        margin: 10px;
+        }
+        
+        .outset {
+        -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+        }
+        
+        .inset {
+        -webkit-box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.75);
+        }
+       </style>
+</head>
+<body>
+    <div>
+        <div class = 'container inset'>
+            <div class = 'header inset'>
+            <img src="image/Jennifer.jpg"
+                 alt="Jennifer's picture logo" class='nav-logo'>
+            <h2>Jenniffer's 游戏机</h2>
+            </div>
+            <div class = 'slots inset'>
+                <div class = 'slot inset'>
+                    <img src="https://www.w3cschool.cn/statics/codecamp/images/9RmpXTy.png" alt="picture 1">
+                </div>
+                <div class = 'slot inset'>
+                    <img src="image/Jennifer.jpg" alt="picture 2">
+                </div>
+                <div class = 'slot inset'>
+                    <img src="https://www.w3cschool.cn/statics/codecamp/images/VJnmtt5.png" alt="picture 4">
+                </div>
+            </div>
+            <br/>
+            <div class = 'outset'>
+                <button class = 'go inset'>
+                    点我
+                </button>
+            </div>
+            <br/>
+            <div class = 'foot inset'>
+                <span class = 'logger'></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slotOne;
+        var slotTwo;
+        var slotThree;
+        function runSlots() {
+        
+        
+            var images = [
+                    "https://www.w3cschool.cn/statics/codecamp/images/9H17QFk.png",
+                    "image/Jennifer.jpg",
+                    "https://www.w3cschool.cn/statics/codecamp/images/9RmpXTy.png",
+                    "https://www.w3cschool.cn/statics/codecamp/images/VJnmtt5.png"
+                ];
+            
+            var logger = document.getElementsByClassName("logger")[0];
+            if (slotOne !== undefined && slotTwo !== undefined && slotThree !== undefined){
+                logger.innerHTML = slotOne + " " + slotTwo + " " + slotThree;
+            
+            }
+            // 在这行的下面添加代码
+            slotOne = Math.floor(Math.random()*4);
+            slotTwo = Math.floor(Math.random()*4);
+            slotThree = Math.floor(Math.random()*4);
+
+            if (slotOne == slotTwo && slotOne == slotThree) {
+                // console.log(slotOne + ", " + slotTwo + ", " + slotThree);
+                logger.innerHTML = "恭喜你赢了!";
+                //return slotOne;
+            } else {
+                logger.innerHTML += ' Not A Win, 再试一次。';
+            }
+            
+            var slots = document.getElementsByClassName("slot");
+            // for (var slot in slots) {
+                // slot[0].innerHTML = "<img src=" +  images[slotOne] + "alt=' picture' class='nav-logo'>"
+            // }
+            slots[0].innerHTML = "<img src=\'" +  images[slotOne] + "\' alt=\'" + "picture " + slotOne + "\'>"
+            slots[1].innerHTML = "<img src=\'" +  images[slotTwo] + "\' alt=\'" + "picture " + slotTwo + "\'>"
+            slots[2].innerHTML = "<img src=\'" +  images[slotThree] + "\' alt=\'" + "picture " + slotThree + "\'>"
+
+            
+            // 在这行的上面添加代码
+            
+            
+            
+            return [slotOne, slotTwo, slotThree];
+        }
+        
+        $(document).ready(function() {
+          $('.go').click(function() {
+         runSlots();
+         });
+         });
+        </script>
+</body>
+</html>
+
+
+    
